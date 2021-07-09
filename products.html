@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Products</title>
+  </head>
+  <body id="top">
+
+<!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="25px" height="25px" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path d="M349.13 136.86c-40.32 0-57.36 19.24-85.44 19.24c-28.79 0-50.75-19.1-85.69-19.1c-34.2 0-70.67 20.88-93.83 56.45c-32.52 50.16-27 144.63 25.67 225.11c18.84 28.81 44 61.12 77 61.47h.6c28.68 0 37.2-18.78 76.67-19h.6c38.88 0 46.68 18.89 75.24 18.89h.6c33-.35 59.51-36.15 78.35-64.85c13.56-20.64 18.6-31 29-54.35c-76.19-28.92-88.43-136.93-13.08-178.34c-23-28.8-55.32-45.48-85.79-45.48z" fill="white"/><path d="M340.25 32c-24 1.63-52 16.91-68.4 36.86c-14.88 18.08-27.12 44.9-22.32 70.91h1.92c25.56 0 51.72-15.39 67-35.11c14.72-18.77 25.88-45.37 21.8-72.66z" fill="white"/></svg><strong>iKart</strong></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Category
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="iphone.html">iPhone</a></li>
+              <li><a class="dropdown-item" href="mac.html">Macbook</a></li>
+              <li><a class="dropdown-item" href="watch.html">Apple Watch</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html" >About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item"> 
+              <a class="nav-link" href="cart.html"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg></a>
+            </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="iPhone" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit"><a href="search.html" style="text-decoration: none; color: green;">Search</a></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+<!--back to top-->
+<div class="backtop" style="position: fixed; bottom: 1%; right: 1%;">
+    <a id="button" href="#top" role="button"> <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+        <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
+      </svg>
+    </a> 
+    </div>
+
+
+<!--Shop By category-->
+
+<section class="shop_by_category py-5 my-5" id="shop_by_category">
+    <div class="container-fluid">
+    <div class="section_title text-center mb-5">
+    <h1 class="text-capitalize">Shop By category</h1>
+    </div>
+    <div class="row">
+    <div class="col-md-4 col-12">
+    <div class="card bg-white text-white">
+    <a href="#watchtag" style="text-decoration: none;"">
+        <div class="card">
+            <img src="images/watch.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="align-items: center;">
+              <p class="card-text"><h2><center>Apple Watch</center></h2></p>
+            </div>
+          </div>
+    </a>
+    </div>
+    </div>
+    <div class="col-md-4 col-12">
+        <div class="card bg-white text-white">
+        <a href="#mactag" style="text-decoration: none;"">
+            <div class="card" >
+                <img src="images/laptop.jpg"class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text"><h2><center>Macbook</center></h2></p>
+                </div>
+              </div>
+        </a>
+        </div>
+        </div>
+        <div class="col-md-4 col-12">
+            <div class="card bg-white text-white">
+            <a href="#phonetag" style="text-decoration: none;"">
+                <div class="card" >
+              
+                    <img src="images/phone.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text"><h2><center>iPhone</center></h2></p>
+                    </div>
+                  </div>
+            </a>
+            </div>
+            </div>
+    </div>
+    </div>
+    </section> 
+
+
+<!--slider-->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/3.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!--products-->
+<div id="watchtag">
+<section class="products py-5 my-5 bg-light" id="products">
+    <div class="container-fluid">
+        <div class="section title text-center mb-5"> <h1 class="text-capitalize">Apple Watch</h1>
+     </div>
+    <div class="row">
+    <div class="col-md-4 col-12">
+    <div class="card bg-white text-white">
+    <a href="watch1.html" style="text-decoration: none; color: black;">
+        <div class="card">
+            <img src="images/series6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Apple Watch Series 6 (GPS, 44mm) - Blue Aluminium Case with Deep Navy Sport Band</h5>
+              <p class="card-text" style="text-decoration: none; color: black;">Price: <h4 style="color: rgb(46, 101, 182);">₹ 43,900.00</h4><ul><li>GPS model lets you take calls and reply to texts from your wrist.
+            </li><li>Measure your blood oxygen with an all-new sensor and app.
+            </li><li>Check your heart rhythm with the ECG app</li><li>S6 SiP is up to 20% faster than Series 3</li></ul></p>
+              <a href="watch1.html" class="btn btn-primary">View item</a>
+            </div>
+          </div>
+    </a>
+    </div>
+    </div>
+    <div class="col-md-4 col-12">
+        <div class="card bg-white text-white">
+        <a href="watch2.html" style="text-decoration: none; color: black;">
+            <div class="card">
+                <img src="images/series3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Apple Watch Series 3 (GPS, 42mm) - Space Grey Aluminium Case with Black Sport Band</h5>
+                  <p class="card-text" style="text-decoration: none;">Price: <h4 style="color: rgb(46, 101, 182);">₹ 22,900.00</h4><ul><li>S3 chip with dual-core processor
+                    watchOS 6 with Activity trends, cycle tracking, loud noise notifications and the App Store on your wrist
+                </li><li>Built in GPS
+                </li><li>Built in Optical heart sensor</li></ul></p>
+                  <a href="watch2.html" class="btn btn-primary">View item</a>
+                </div>
+              </div>
+        </a>
+        </div>
+        </div>
+        <div class="col-md-4 col-12">
+            <div class="card bg-white text-white">
+            <a href="watch3.html" style="text-decoration: none; color: black;">
+                <div class="card">
+                    <img src="images/watchse.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Apple Watch SE (GPS, 40mm) - Silver Aluminium Case with White Sport Band</h5>
+                      <p class="card-text">Price: <h4 style="color: rgb(46, 101, 182);">₹ 29,900.00</h4><ul><li>GPS model lets you take calls and reply to texts from your wrist.</li>
+                        <li>Up to 2x faster processor than Series 3.</li>
+                        <li>Track your daily activity on Apple Watch and see your trends in the Fitness app on iPhone</li>
+                        <li>A large Retina OLED display</li></ul></p>
+                      <a href="watch3.html" class="btn btn-primary">View item</a>
+                    </div>
+                  </div>
+            </a>
+            </div>
+            </div>
+    </div>
+    </div>
+    </section>
+    </div>
+
+
+<!--products-->
+<div id="mactag">
+<section class="products py-5 my-5 bg-light" id="products">
+    <div class="container-fluid">
+        <div class="section title text-center mb-5"> <h1 class="text-capitalize">Macbook</h1>
+     </div>
+    <div class="row">
+    <div class="col-md-4 col-12">
+    <div class="card bg-white text-white">
+    <a href="mac2.html" style="text-decoration: none; color: black;">
+        <div class="card">
+            <img src="images/m1pro.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">2020 Apple MacBook Air (13.3-inch/33.78 cm, Apple M1 chip with 8‑core CPU and 8‑core GPU, 8GB RAM, 512GB SSD) - Space Grey
+            </h5>
+              <p class="card-text" style="text-decoration: none; color: black;">Price: <h4 style="color: rgb(46, 101, 182);">₹ 1,14,990.00</h4><ul><li>Apple-designed M1 chip for a giant leap in CPU, GPU, and machine learning performance.
+            </li><li>8-core CPU delivers up to 3.5x faster performance to tackle projects faster than ever.
+            </li><li>16-core Neural Engine for advanced machine learning.</li></ul></p>
+              <a href="mac2.html" class="btn btn-primary">View item</a>
+            </div>
+          </div>
+    </a>
+    </div>
+    </div>
+    <div class="col-md-4 col-12">
+        <div class="card bg-white text-white">
+        <a href="mac1.html" style="text-decoration: none; color: black;">
+            <div class="card">
+                <img src="images/m1air.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">2020 Apple MacBook Pro (13.3-inch/33.78 cm, Apple M1 chip with 8‑core CPU and 8‑core GPU, 8GB RAM, 256GB SSD) - Space Grey</h5>
+                  <p class="card-text" style="text-decoration: none;">Price: <h4 style="color: rgb(46, 101, 182);">₹ 1,12,990.00</h4><ul><li>Apple-designed M1 chip for a giant leap in CPU, GPU, and machine learning performance.
+                </li><li>8-core CPU delivers up to 2.8x faster performance to fly through workflows quicker than ever.
+                </li><li>8-core GPU with up to 5x faster graphics for graphics-intensive apps and game.</li></ul></p>
+                  <a href="mac1.html" class="btn btn-primary">View item</a>
+                </div>
+              </div>
+        </a>
+        </div>
+        </div>
+        <div class="col-md-4 col-12">
+            <div class="card bg-white text-white">
+            <a href="mac3.html" style="text-decoration: none; color: black;">
+                <div class="card">
+                    <img src="images/pro2019.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">2019 Apple MacBook Pro (16-inch/40.65 cm, 16GB RAM, 1TB Storage, 2.3GHz 9th Gen Intel Core i9) - Space Grey</h5>
+                      <p class="card-text">Price: <h4 style="color: rgb(46, 101, 182);">₹ 2,22,810.00</h4><ul><li>Ninth-generation 8-core Intel Core i9 processor.</li>
+                        <li>AMD Radeon Pro 5500M graphics with GDDR6 memory.</li>
+                        <li>Intel UHD Graphics 630.</li>
+                        <li>Ultrafast SSD.</li>
+                    <li>Stunning 40.65cm (16-inch) Retina display with True Tone technology.</li></ul></p>
+                      <a href="mac3.html" class="btn btn-primary">View item</a>
+                    </div>
+                  </div>
+            </a>
+            </div>
+            </div>
+    </div>
+    </div>
+    </section>
+</div>
+
+
+
+<!--products-->
+<div id="phonetag">
+<section class="products py-5 my-5 bg-light" id="products">
+    <div class="container-fluid">
+        <div class="section title text-center mb-5"> <h1 class="text-capitalize">Apple iPhone</h1>
+     </div>
+    <div class="row">
+    <div class="col-md-4 col-12">
+    <div class="card bg-white text-white">
+    <a href="iphone2.html" style="text-decoration: none; color: black;">
+        <div class="card">
+            <img src="images/iphone12.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Apple iPhone 12 Pro (128GB) - Pacific Blue</h5>
+              <p class="card-text" style="text-decoration: none; color: black;"">Price: <h4 style="color: rgb(46, 101, 182);">₹ 1,15,100.00 </h4><ul><li>6.1-inch (15.5 cm diagonal) Super Retina XDR display
+            </li><li>Ceramic Shield, tougher than any smartphone glass
+            </li><li>A14 Bionic chip, the fastest chip ever in a smartphone</li><li>Pro camera system with 12MP Ultra Wide, Wide and Telephoto cameras; 4x optical zoom range; Night mode, Deep Fusion, Smart HDR 3, Apple ProRAW, 4K Dolby Vision HDR recording</li></ul></p>
+              <a href="iphone2.html" class="btn btn-primary">View item</a>
+            </div>
+          </div>
+    </a>
+    </div>
+    </div>
+    <div class="col-md-4 col-12">
+        <div class="card bg-white text-white">
+        <a href="iphone1.html" style="text-decoration: none; color: black;">
+            <div class="card">
+                <img src="images/12pro.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Apple iPhone 12 Pro Max (256GB) - Graphite</h5>
+                  <p class="card-text" style="text-decoration: none;">Price: <h4 style="color: rgb(46, 101, 182);">₹ 1,59,900.00</h4><ul><li>6.1-inch (15.5 cm diagonal) Super Retina XDR display
+                </li><li>Ceramic Shield, tougher than any smartphone glass
+                </li><li>A14 Bionic chip, the fastest chip ever in a smartphone</li><li>iOS with redesigned widgets on the Home screen, all-new App Library, App Clips and more.</li><li> MagSafe accessories for easy attach and faster wireless charging.</li></ul></p>
+                  <a href="iphone1.html" class="btn btn-primary">View item</a>
+                </div>
+              </div>
+        </a>
+        </div>
+        </div>
+        <div class="col-md-4 col-12">
+            <div class="card bg-white text-white">
+            <a href="iphone3.html" style="text-decoration: none; color: black;">
+                <div class="card">
+                    <img src="images/se.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">  iPhone 11 Pro Max (512GB) - Space Grey</h5>
+                      <p class="card-text">Price: <h4 style="color: rgb(46, 101, 182);">₹ 96,900.00</h4><ul><li>6.5-inch (16.5 cm diagonal) Super Retina XDR OLED display</li>
+                        <li>Water and dust resistant (4 meters for up to 30 minutes, IP68)</li>
+                        <li>Triple-camera system with 12MP Ultra Wide, Wide, and Telephoto cameras; Night mode, Portrait mode, and 4K video up to 60fps
+                        12MP TrueDepth front camera with Portrait Mode, 4K video, and Slo-Mo</li>
+                        <li>A13 Bionic chip with third-generation Neural Engine</li></ul></p>
+                      <a href="iphone3.html" class="btn btn-primary">View item</a>
+                    </div>
+                  </div>
+            </a>
+            </div>
+            </div>
+    </div>
+    </div>
+    </section>
+    </div>
+
+
+
+
+  <!--footer-->
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/re.x.x/" role="button"
+          ><i class="fab fa-instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+          </svg></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/rexrony/" role="button"
+          ><i class="fab fa-linkedin-in"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+          </svg></i
+        ></a>
+  
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/rexxrony" role="button"
+          ><i class="fab fa-github"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright:
+        Designed by Rex Rony Jacob
+    </div>
+    <!-- Copyright -->
+  </footer>
+</section>
+
+
+
+
+
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
